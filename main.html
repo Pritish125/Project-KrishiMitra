@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <script src="main.js"></script>
+</head>
+<body>
+    <div class="hero">
+
+        <div class="nav">
+            <div class="logo-box">
+                <img src="logo2.png" id="logo">
+            </div>
+            <div class="help">
+                <p>Help</p>
+            </div>
+        </div>
+        <div class="main">
+            <div class="log">
+                <div class="log-title">
+                    <h1>Transaction Records</h1>
+                </div>
+                <div class="log-records">
+                    <ul type="none">
+                        <li>2023-11-10 | 2000 Kg | Stubble | Deposited | ++</li>
+                        <li>2023-10-20 | 500 Kg | Manure | Withdraw | --</li>
+                        <li>2023-09-11 | 500 Kg | Manure | Withdraw | --</li>
+                        <li>2023-08-13 | 10000 Kg | Stubble | Deposited | ++</li>
+                    </ul>
+                </div>
+
+            </div>
+    
+            <div class="profile">
+                <div class="img-name">
+                    <div class="img-box">
+                        <img src="farmer.jpg" id="img">
+                    </div>
+                    <p id="name">Bhupinder Jogi</p>  
+                </div>
+                <div class="profile-details">
+                    <p>Address: Jalandhar, Punjab <br>
+                    Ph No. : +91 3256216161 <br>
+                    Reg Id : 654AF56 </p>
+                </div>
+                <div class="btn">
+                    <button id="logout" onclick="logout()">Logout</button>
+                </div>
+            </div>
+    
+            <div class="imp">
+                <div class="deposit-info">
+                    <p>Deposited:</p>
+                    <h1><span id="deposit-val">12000</span>-KG</h1>
+                </div>
+                <div class="balance-info">
+                    <p>Balance:</p>
+                    <h1><span id="balance-val">2600</span>-KG</h1>
+                </div>
+                <div class="input-field">
+                    <input type="number" id="input" placeholder="Enter Deposit/Withraw ">
+                </div>
+                <div class="btns">
+                    <button id="deposit" type="button" onclick="deposit()"><span></span>Deposit</button>
+                    <button id="wd" type="button" onclick="withdraw()"><span></span>Withdraw</button>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+</body>
+</html>
