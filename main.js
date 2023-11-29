@@ -31,5 +31,5 @@ function withdraw () {
 }
 
 function logout () {
-    window.open('loginpage.html');
+    window.open('index.html');
 }
